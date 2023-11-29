@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <style>
+        body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        background: url(images/corp.jpg);
+        background-size: 100%;
+        background-position:center;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+       }
+        
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+
+       #wrapper{
+        width: 100%;
+        margin: 5% auto;
+        background: #fff;
+        border-radius: 10px;
+        }
+
+       .header{
+        width: 100%;
+        background: #fdfcfc;
+        margin: 0;
+        padding: 0;
+        color: #070707;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+       }
+
+       nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 18px;
+       }
+
+       nav ul li:hover{
+        background:rgb(196, 194, 194);
+        color: black;
+        cursor: pointer;
+       }
+
+       .content-area{
+        height: 300px;
+        /* width: 500px; */
+       }
+
+       .footer{
+        height: 70px;
+        background:  #acacac;
+       }
+       .dropdown{
+        position: relative;
+      }
+      .dropdown-content{
+        display: none;
+        width: 400px;
+        position:absolute;
+        background: #b1b0b0;
+        margin-left: -100px;
+        margin-top: 10px;
+        transition: all 5s; 
+        height: 400px;
+      }
+
+      .dropdown:hover .dropdown-content{
+        display: block;
+      }
+      .dropdown-content li:hover{
+        background:rgb(134, 133, 133);
+        color: black;
+      }
+      .dropdown-content li{
+        width: 200px;
+      }
+         .dropdown-business{
+        display: none;
+        width: 400px;
+        position:absolute;
+        background: #b1b0b0;
+        margin-left: -100px;
+        margin-top: 10px;
+        transition: all 5s; 
+        height: 320px;
+      }
+
+      .dropdown:hover .dropdown-business{
+        display: block;
+      }
+      .dropdown-business li:hover{
+        background:rgb(133, 131, 131);
+        color: black;
+      }
+      .dropdown-business li{
+        width: 200px;
+      }
+
+       .dropdown-corporate{
+        display: none;
+        width: 400px;
+        position:absolute;
+        background: #b1b0b0;
+        margin-left: -100px;
+        margin-top: 10px;
+        transition: all 5s; 
+        height: 255px;
+      }
+
+      .dropdown:hover .dropdown-corporate{
+        display: block;
+      }
+      .dropdown-corporate li:hover{
+        background:rgb(122, 122, 122);
+        color: black;
+      }
+      .dropdown-corporate li{
+        width: 200px;
+      }
+
+      .dropdown-private{
+        display: none;
+        width: 400px;
+        position:absolute;
+        background: #b1b0b0;
+        margin-left: -100px;
+        margin-top: 10px;
+        transition: all 5s; 
+        height: 275px;
+      }
+
+      .dropdown:hover .dropdown-private{
+        display: block;
+      }
+      .dropdown-private li:hover{
+        background:rgb(105, 104, 104);
+        color: black;
+      }
+      .dropdown-private li{
+        width: 200px;
+      }
+
+        input[type=text]{
+        width: 100px;
+        height: 45px;
+        border: none;
+        background: #949292;
+        color: #070707;
+        padding: 10px;
+      }
+
+      input[type=text]:focus{
+        outline: none;
+      }
+
+      ::placeholder{
+        color: rgb(114, 101, 101) transparent;
+        color: #070707;
+
+        font-size: 16px;
+      }
+      .search{
+        width: 150px;
+        position: relative;
+        height: fit-content;
+      }
+      .search input{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: none;
+        background: #4d4c4c;
+        padding: 10px;
+        height: 30px;
+        color: white;
+        width: auto;
+      }
+      .search i {
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        top: 0;
+        border: #fcfcfc;
+        padding: 10px;
+        color: #fff;
+        z-index: 2;
+        width: auto;
+      }
+      
+.life{
+  background:rgb(84, 231, 84) ;
+  color: #070707;
+  background-position: 100%;
+}
+      
+      
+    </style> 
+</head>
+<body>
+   <div id="wrapper">
+        <div class="header">
+            <div class="logo" >
+                <img src="images/download-removebg-preview.png" width="130px" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li class="dropdown">Home <i class="fas fa-caret-down"></i></li>
+                    <li class="dropdown"> Personal <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-content">
+                            <li>Agency Banking</li>
+                            <li>Back to School</li>
+                            <li>Bancassurance</li>
+                            <li>Borrowing</li>
+                            <li>Diaspora Banking</li>
+                            <li>Everyday Accounts</li>
+                            <li>Kids & Teens</li>
+                            <li>Money Transfer</li>
+                            <li>Promos & Propositions</li>
+                            <li>Saving & Investing</li>
+                            <li>The “W" Initiative</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">Business <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-business">
+                            <li>Business Accounts</li>
+                            <li>CBN Healthcare Sector Loan</li>
+                            <li>E Solutions & Services</li>         
+                            <li>Emerging Businesses</li>
+                            <li>FX Products</li>
+                            <li>FX Self Service Portal</li>
+                            <li>Offering</li>
+                            <li>Our Segment</li>
+                           <li> SME Zone</li>
+                        </ul> 
+                    </li>
+                    <li class="dropdown">Corporate <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-corporate">
+                            <li>Corporate Sector</li>
+                            <li>Distributors Forum</li>
+                            <li>Economic Research</li>
+                            <li>Exporters Forum</li>
+                            <li>Loans</li>
+                            <li>Products & Services</li>
+                            <li>Wantong Account</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">Private <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-private">
+                            <li>About the Access Private Bank</li>
+                            <li>Access Medicair</li>
+                            <li>American Express Platinum Card</li>
+                            <li>Black Card</li>
+                            <li>Exclusive Private Banker</li>
+                            <li>Investment Management</li>
+                            <li>Our Products & Services</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">Ways to Bank <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-content">
+                            <li>*901#</li>
+                            <li> Access Money</li>
+                            <li> Access WhatsApp Banking</li>
+                            <li>Cards</li>
+                            <li>FacePay</li>
+                            <li> Mobile Banking</li>
+                            <li> More Xtravaganza</li>
+                            <li> Online Banking</li>
+                            <li> Online Banking Business</li>                         
+                        </ul>
+                    </li>
+                    <li class="dropdown">Contact Us <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-content">
+                            <li>Agency Banking Details</li>
+                            <li> Biometrics Enrollment Branches</li>
+                            <li> Branch & ATM Locator</li>
+                            <li>Branches With Wi-Fi</li>
+                            <li> Interactive Voice Response</li>
+                            <li> My Access</li>
+                            <li>We Care</li>                                                                           
+                        </ul>
+                    </li>
+                    <!-- <li class="dropdown">Contact Us <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-content">
+                            <li>Agency Banking Details</li>
+                            <li> Biometrics Enrollment Branches</li>
+                            <li> Branch & ATM Locator</li>
+                            <li>Branches With Wi-Fi</li>
+                            <li> Interactive Voice Response</li>
+                            <li> My Access</li>
+                            <li>We Care</li>                                                                           
+                        </ul>
+                    </li> -->
+                    <!-- <li class="dropdown">Contact Us <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-content">
+                            <li>Agency Banking Details</li>
+                            <li> Biometrics Enrollment Branches</li>
+                            <li> Branch & ATM Locator</li>
+                            <li>Branches With Wi-Fi</li>
+                            <li> Interactive Voice Response</li>
+                            <li> My Access</li>
+                            <li>We Care</li>                                                                           
+                        </ul>
+                    </li> -->
+                    <li class="dropdown">I am.. <i class="fas fa-caret-down"></i></li>
+                    <li class="search">
+                    <input type="text" placeholder="search">
+                    <i  class="fas fa-magnifying-glass"></i>
+                  </li>
+                  
+                  <li class="life"> <i class="fas fa-lock"></i> internet Banking
+                  </li>
+               
+                </ul>
+            </nav>
+        </div>
+       
+       
+   </div>
+   
+</body>
+</html>
